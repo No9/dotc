@@ -66,7 +66,7 @@ if(afiles.length > 0){
 
 gargs.unshift('-x', 'c++', '-D', 'DOTC', '-');
 
-var cmd = process.env.CC || 'gcc';
+var cmd = process.env.CC || 'g++';
 var gcc = spawn(cmd, gargs);
 gcc.stdout.pipe(process.stdout);
 gcc.stderr.pipe(process.stderr);
